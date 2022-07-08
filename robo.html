@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+	<title>Hello Robot</title>
+	<link rel="stylesheet" type="text/css" href="./robo.css"></style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<html>
+<body>
+<div class="MyResponsive">
+	<canvas id="myCanvas" class="MyCanvas"></canvas>
+	<div class="MyDiv">
+		<p class="MyTitle">Hello Robot</p>
+		<table class="MyTable">
+			<tr>
+				<td class="MyTd" colspan="3">
+					Click a Square in Grid to Place Robot.
+				</td>
+			</tr>
+			<tr>
+				<td class="MyTd" colspan='3'>
+					&nbsp;&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td class="MyTd" colspan='3'>
+					Robot Actions
+				</td>
+			</tr>
+			<tr>
+				<td class="MyTd" colspan='1'>
+					<button class="MyButton" type="button" OnClick="MoveRobot();">Move</button>
+				</td>
+				<td class="MyTd" colspan='1'>
+					<button class="MyButton" type="button" OnClick="MoveLeft();">Left</button>
+				</td>
+				<td class="MyTd" colspan='1'>
+					<button class="MyButton" type="button" OnClick="MoveRight();">Right</button>
+				</td>
+			</tr>
+			<tr>
+				<td class="MyTd" colspan='3'>
+					&nbsp;&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td class="MyTd" colspan='3' id='ReportId'>
+				</td>
+			</tr>
+			<tr>
+				<td class="MyTd" colspan='3'>
+					&nbsp;&nbsp;
+				</td>
+			<tr>
+				<td class="MyTd" colspan='3' id='BoundaryId' style='color:red;'>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<script type="text/javascript" src="./robo.js"></script>
+</body>
+</html>

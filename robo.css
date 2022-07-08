@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #000000;
+}
+.MyButton {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 8px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius:3px;
+}
+.MyTitle {
+	font-size:20px;
+	font-weight:bold;
+}
+.MyTable {
+	width: 100%; 
+	border-collapse: collapse; 
+	table-layout: fixed; 
+	border: 0px solid black;
+	padding-bottom:0px;
+}
+.MyDiv {
+	width:375px;
+	text-align:center;
+
+	margin:20px;
+	text-align:center;
+	border:0px solid black;
+	font-weight:bold;
+}
+.MyTd {
+	text-align:center;
+}
+.MyCanvas {
+	border:0px; solid black;
+	margin:20px;
+}
+.MyResponsive {
+	display:flex; 
+	flex-wrap: wrap; 
+	justify-content:center;
+}
