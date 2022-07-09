@@ -1,4 +1,3 @@
-
 /*
 Instructions
 1. You are required to simulate a toy robot moving on a square tabletop, of dimensions 5 units x 5 units.
@@ -11,23 +10,17 @@ Instructions
 8. Include a README file with instructions on how to build/compile your solution and how to run it.
 9. Share your code via a public GitHub repository, git bundle or zip file.
 10. We like to see how you work, not just the end result.
-
 Commands
 1.All commands should provide output indicating whether or not they succeeded.
 PLACE X,Y,DIRECTION
-
 2. X and Y are integers that indicate a location on the tabletop.
 DIRECTION is a string indicating which direction the robot should face. It it one of the four cardinal directions: NORTH, EAST, SOUTH or WEST.
-
 3. MOVE
 Instructs the robot to move 1 square in the direction it is facing.
-
 4. LEFT
 Instructs the robot to rotate 90° anticlockwise/counterclockwise.
-
 5.RIGHT
 Instructs the robot to rotate 90° clockwise.
-
 6.REPORT
 Outputs the robot's current location on the tabletop and the direction it is facing.
 */
@@ -85,17 +78,7 @@ function canvasClick(e) {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 function Report() {
    var { iRow, iCol } = GetRowCol(xCurrent, yCurrent);
-   var sReport =
-      "Report<br>Direction Facing: " +
-      sCurrentDir +
-      "<br>X=" +
-      xCurrent +
-      ", Y=" +
-      yCurrent +
-      "<br>Row: " +
-      iRow +
-      ", Col: " +
-      iCol;
+   var sReport = `Report<br>Direction Facing: ${sCurrentDir} <br>X=${xCurrent}, Y=${yCurrent} <br>Row=${iRow}, Col=${iCol}`;
    if (iRow > 0 && iCol > 0) {
       document.getElementById("ReportId").innerHTML = sReport + "<br>Success!";
    } else {
