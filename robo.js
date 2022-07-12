@@ -30,7 +30,7 @@ Outputs the robot's current location on the tabletop and the direction it is fac
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 var rSquareSize = 75;
 var sCurrentDir = "East";
-var iTableTopSize = 5;
+var iTableTopSize = 6;
 var xCurrent = rSquareSize / 2;
 var yCurrent = rSquareSize / 2;
 var rBoundary = iTableTopSize * rSquareSize;
@@ -60,18 +60,23 @@ $(document).ready(function () {
 // place robot on any square with mouse
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 function canvasClick(e) {
-   var { iRow, iCol } = GetRowCol(e.offsetX, e.offsetY);
+var { iRow, iCol } = GetRowCol(e.offsetX, e.offsetY);
+console.log('x,y=' + e.offsetX + ', ' + e.offsetY);
+console.log('iRow,iCol=' + iRow + ', ' + iCol);
 
-   var x = (iCol - 1) * rSquareSize + rSquareSize / 2;
-   var y = (iRow - 1) * rSquareSize + rSquareSize / 2;
+   if (iRow > 0 && iCol > 0)  {
+      var x = (iCol - 1) * rSquareSize + rSquareSize / 2;
+      var y = (iRow - 1) * rSquareSize + rSquareSize / 2;
 
-   PlaceRobot(xCurrent, yCurrent, sCurrentDir, "Erase");
-   PlaceRobot(x, y, sCurrentDir, "Show");
-   xCurrent = x;
-   yCurrent = y;
-
+      PlaceRobot(xCurrent, yCurrent, sCurrentDir, "Erase");
+      PlaceRobot(x, y, sCurrentDir, "Show");
+      xCurrent = x;
+      yCurrent = y;
+      BoundaryHit("Clear");
+   } else {
+      BoundaryHit("Outside");
+   }
    Report();
-   BoundaryHit("Clear");
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 // report robots status
@@ -212,6 +217,8 @@ function MoveRobot() {
 function BoundaryHit(sDir) {
    if (sDir == "Clear") {
       document.getElementById("BoundaryId").innerHTML = "";
+   } else if (sDir == "Outside") {
+      document.getElementById("BoundaryId").innerHTML = "Location Selected is Outside Boundary!";
    } else {
       document.getElementById("BoundaryId").innerHTML = "Robot Hitting '" + sDir + "' Wall!";
    }

@@ -39,7 +39,7 @@ body {
 	text-align:center;
 }
 .MyCanvas {
-	border:0px; solid black;
+	border:1px solid black;
 	margin:20px;
 }
 .MyResponsive {
