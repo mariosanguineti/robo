@@ -6,6 +6,9 @@ There are 4 files
 robo.html - HTML
 robo.css  - CSS
 robo.js   - Javascript
+play.html - unit test, to check canvas click, and all geometryy 100%
+sketch*.png - before start, I sketched on paper what I was goign to code.
+notes.txt - some links I went to help me get started
 README.txt - This file
 
 To Execute
