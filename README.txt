@@ -16,6 +16,6 @@ To Play now without installing see exact copy running here:
 https://minksinsync.com/robo.html
 
 
-Add sketeches on paaper from saturday morning 9th July
-and Unit Test play function
+Add sketeches on paper from saturday morning 9th July
+and Unit Test play function! And links to sites that helped!
 
