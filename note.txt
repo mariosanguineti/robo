@@ -1,7 +1,12 @@
-LInk that helped me to some extent
+Links that helped me to some extent
+Previous Coding in Canvas ~ 8 years ago
+
+https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
 
 https://www.w3schools.com/html/html5_canvas.asp
 
 https://techglimpse.com/canvas-types-source-destination-operations/
 
 https://www.w3schools.com/html/html5_svg.asp
+
+https://stackoverflow.com/questions/71219398/drawing-a-triangle-in-a-canvas
