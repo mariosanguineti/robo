@@ -12,10 +12,10 @@
 <div class="MyResponsive">
 	<canvas id="myCanvas" class="MyCanvas"></canvas>
 	<div class="MyDiv">
-		<p class="MyTitle">Hello Robot</p>
+		<span class="MyTitle">Hello Robot</span>
 		<table class="MyTable">
 			<tr>
-				<td class="MyTd" colspan="3">
+				<td class="MyTd" colspan="3" id='ModeId'>
 					Click a Square in Grid to Place Robot.
 				</td>
 			</tr>
@@ -38,6 +38,22 @@
 				</td>
 				<td class="MyTd" colspan='1'>
 					<button class="MyButton" type="button" OnClick="MoveRight();">Right</button>
+				</td>
+			</tr>
+			<tr>
+				<td class="MyTd" colspan='3'>
+					&nbsp;&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td class="MyTd" colspan='1'>
+					<button class="MyButton" type="button" OnClick="DoPlaceObstacles();">Place Obstacle</button>
+				</td>
+				<td class="MyTd" colspan='1'>
+					<button class="MyButton" type="button" OnClick="DoPlaceRobot();">Place Robot</button>
+				</td>
+				<td class="MyTd" colspan='1'>
+					<button class="MyButton" type="button" OnClick="DoClearAll();">Clear All</button>
 				</td>
 			</tr>
 			<tr>
