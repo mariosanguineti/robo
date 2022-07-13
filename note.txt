@@ -1,0 +1,7 @@
+
+
+https://www.w3schools.com/html/html5_canvas.asp
+
+https://techglimpse.com/canvas-types-source-destination-operations/
+
+https://www.w3schools.com/html/html5_svg.asp

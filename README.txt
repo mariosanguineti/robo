@@ -15,3 +15,7 @@ or all together in same directory on your local host and click HTML file
 To Play now without installing see exact copy running here:
 https://minksinsync.com/robo.html
 
+
+Add sketeches on paaper from saturday morning 9th July
+and Unit Test play function
+
