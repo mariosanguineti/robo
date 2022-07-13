@@ -30,7 +30,7 @@ Outputs the robot's current location on the tabletop and the direction it is fac
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 var rSquareSize = 75;
 var sCurrentDir = "East";
-var iTableTopSize = 6;
+var iTableTopSize = 5;
 var xCurrent = rSquareSize / 2;
 var yCurrent = rSquareSize / 2;
 var rBoundary = iTableTopSize * rSquareSize;
