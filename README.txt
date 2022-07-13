@@ -22,3 +22,7 @@ https://minksinsync.com/robo.html
 Add sketeches on paper from saturday morning 9th July
 and Unit Test play function! And links to sites that helped!
 
+Check Video on work process
+Using Visual Studio code for this project
+https://revastaff.tinytake.com/msc/NzEwMDQ4Nl8xOTg1MTM2NA
+
